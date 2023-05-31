@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login {
+  display: flex;
+  gap: 15em;
+  transition: 2s;
+}
+
+.login-boasVindas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.boasVindas-titulo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255);
+  transition: 2s;
+  opacity: 0;
+}
+
+.boasVindas-botao {
+  padding: 7px 12px;
+  width: 50%;
+  cursor: pointer;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 7px;
+  transition: 200ms;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px;
+}
+
+.boasVindas-botao:hover {
+  background-color: rgba(95, 94, 94, 0.3);
+  color: #ffffff;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg,#030303,rgb(43, 43, 43),rgb(115, 115, 115));
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.perfil {
+  width: 180px;
+  height: 180px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 50px -10px #000;
+  opacity: 0;
+  transition: 500ms;
+  filter: saturate(0);
+}
+
+.perfil:hover {
+  filter: saturate(1);
+}

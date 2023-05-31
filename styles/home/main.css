@@ -1,0 +1,146 @@
+.imagem-separador {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+.imagem-principal {
+    width: 380px;
+    height: 200px;
+    margin-top: 80px;
+    border-radius:  16px;
+    box-shadow: 0px 0px 20px -10px #000;
+}
+
+.titulo-principal, .barras {
+    margin-top: 55px;
+    color: var(--branco);
+    font-family: monospace;
+    font-size: 40px;
+    color: red;
+}
+
+/* CONTEUDO */
+
+.conteudo {
+    width: 95%;
+    height: 1000px;
+    background-color: var(--backgroundHeader);
+    margin: 82px auto;
+    box-shadow: 0px 0px 20px -10px #000;
+}
+
+/* Perfil CONTAINER */
+
+hr {
+    margin: 5em auto 0 auto;
+}
+
+.perfilContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4em;
+}
+
+.perfil-box {
+    display: flex;
+    align-items: center;
+}
+
+.box-perfil {
+    gap: 3.5em;
+}
+
+.perfil-foto {
+    width: 175px;
+    border-radius: 30px;
+}
+
+.perfil-botao {
+    padding: 1em;
+    background-color: var(--background);
+    color: #cbcaca;
+    font-size: 15px;
+    border: 0;
+    border-radius: 8px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.perfil-botao:hover {
+    background-color: var(--corHover);
+}
+
+.box-usuario {
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.usuario-confirmBox {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#usuario-input {
+    padding: 1em;
+    background-color: transparent;
+    color: var(--branco);
+    border: 0;
+    outline: 0;
+    font-family: var(--fontePrincipal);
+    font-size: 15px;
+    border-bottom: 1px solid gray;
+}
+
+#usuario-input::placeholder {
+    font-size: 20px;
+    text-align: center;
+}
+
+.usuario-botao {
+    background-color: var(--background);
+    border: 0;
+    color: #cbcaca;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.usuario-botao:hover {
+    background-color: var(--corHover);
+}
+
+.errorMsg {
+    color: orange;
+    font-family: monospace;
+}
+
+.botao-done {
+    background-color: rgb(221, 221, 221);
+    border: 0;
+    padding: 1em 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 200ms;
+}
+
+.botao-done:hover {
+    background-color: var(--corHover);
+    color: var(--branco);
+}
+
+/* carregando msg */
+
+.carregando {
+    font-size: 35px;
+    color: transparent;
+    font-family: monospace;
+    margin-top: 1.5em;
+    margin-left: 1.1em;
+    transition: 1s;
+}

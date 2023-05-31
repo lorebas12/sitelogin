@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home/header.css">
+    <link rel="stylesheet" href="styles/home/main.css">
+    <title>RaidForums - Home</title>
+</head>
+<body>
+    
+    <!-- CABECALHO -->
+    <header class="cabecalho">
+        <!-- CABECALHO UL -->
+        <ul class="cabecalho-lista">
+            <!-- CABECALHO LI -->
+            <div class="itens-principais">
+                <!-- LI PRINCIPAL -->
+                <li class="lista-item">
+                    <img title="home" src="img/home.png" alt="" class="icon-link">
+                    <a href="#" class="lista-link">Home</a>
+                </li>
+                <li class="lista-item">
+                    <img title="profile" src="img/profile.png" alt="" class="icon-link">
+                    <a href="#" class="lista-link">Profile</a>
+                </li>
+                <li class="lista-item">
+                    <img title="support" src="img/support.png" alt="" class="icon-link">
+                    <a href="#" class="lista-link">Support</a>
+                </li>
+            </div>
+            
+            <!-- LI SECUNDARIO -->
+            <div class="itens-secundarios">
+                <li class="lista-item">
+                    <img title="pingu" src="img/credits.png" alt="" class="icon-link">
+                    <a href="#" class="lista-link creditos">Credits</a>
+                </li>
+            </div>
+        </ul>
+    </header>
+
+    <div class="imagem-separador">
+        <img src="img/imagemPrincipal.jpg" alt="meme image" class="imagem-principal">
+        <h1 class="titulo-principal"><span class="barras">/</span> Home <span class="barras">/</span></h1>
+    </div>
+
+    <main class="conteudo">
+        
+        <div class="perfilContainer">
+            <div class="perfil-box box-perfil">
+                <img class="perfil-foto" src="img/perfil.jpg" alt="perfil foto">
+                <button class="perfil-botao">change photo</button>
+            </div>
+
+            <div class="perfil-box box-usuario">
+                <input type="text" id="usuario-input" placeholder="username*">
+                <div class="usuario-confirmBox">
+                    <button class="usuario-botao">change</button>
+                    <p class="errorMsg"></p>
+                </div>
+            </div>
+
+            <div class="perfil-box">
+                <button class="botao-done">DONE</button>
+            </div>
+        </div>
+
+        <hr width="95%" size="1px" color="gray">
+
+        <h1 class="carregando"></h1>
+    </main>
+
+
+    <script src="js/home.js"></script>
+</body>
+</html>
