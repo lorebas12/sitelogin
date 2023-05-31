@@ -24,7 +24,7 @@
 
 .conteudo {
     width: 95%;
-    height: 1000px;
+    height: 1030px;
     background-color: var(--backgroundHeader);
     margin: 82px auto;
     box-shadow: 0px 0px 20px -10px #000;
@@ -155,11 +155,63 @@ hr {
 
 /* PARTE DO CONTEUDO */
 
-.boasVindas {
+.welcome {
     background-color: var(--background);
     width: 95%;
-    height: 590px;
+    height: 560px;
     margin: 0 auto;
     border-radius: 14px;
     box-shadow: 0px 0px 30px -10px #000;;
+    opacity: 0;
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-perfilCont {
+    display: flex;
+    gap: 2em;
+}
+
+.nomeComSeparador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 630px;
+}
+
+.perfilCont-imagem {
+    width: 200px;
+    border-radius: 360px;
+    box-shadow: 0px 0px 60px -38px rgb(255, 62, 62);
+    background-color: rgb(46, 24, 24);
+}
+
+.perfilCont-titulo {
+    color: red;
+    font-family: monospace;
+    font-size: 35px;
+}
+
+/* welcome infos */
+
+.welcome-infos {
+    margin-left: 413px;
+}
+
+.infos-textos {
+    display: flex;
+    flex-direction: column;
+}
+
+.infos-span-red {
+    color: red;
+}
+
+.infos-titulo {
+    color: var(--branco);
+    font-family: monospace;
+    font-size: 25px;
 }

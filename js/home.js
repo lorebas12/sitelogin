@@ -1,9 +1,12 @@
 // botao change username
 
 const usernameBotao = document.querySelector('.usuario-botao');
+let usernameUser;
 
 usernameBotao.addEventListener('click', () => {
-    const username = document.querySelector('#usuario-input').value;
+    username = document.querySelector('#usuario-input').value;
+    usernameUser = username;
+    
     let errorMsg = document.querySelector('.errorMsg');
     if (username === ''){
         errorMsg.innerText = 'empty fields';
@@ -21,6 +24,7 @@ const carregandoMsg = document.querySelector('.carregando');
 
 doneBotao.addEventListener('click', () => {
     const username = document.querySelector('#usuario-input').value;
+    usernameUser = username;
     
     if (username === ''){
         carregandoMsg.innerText = 'unfilled fields';
@@ -35,5 +39,19 @@ doneBotao.addEventListener('click', () => {
         setTimeout(() => {
             carregandoMsg.style.color = 'transparent';
         } ,2000);
+
+        setTimeout(() => {
+            mostrarConteudoPerfil();
+        }, 3500);
     }
 });
+
+//  CONTEUDO PERFIL - PARTE DE BAIXO
+
+function mostrarConteudoPerfil(){
+    const welcome = document.querySelector('.welcome');
+    welcome.style.opacity = '100%';
+    const perfilCont_titulo = document.querySelector('.perfilCont-titulo');
+    perfilCont_titulo.innerText = usernameUser;
+
+}
