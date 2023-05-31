@@ -24,14 +24,14 @@ doneBotao.addEventListener('click', () => {
     
     if (username === ''){
         carregandoMsg.innerText = 'unfilled fields';
-        carregandoMsg.style.color = 'red';
+        carregandoMsg.style.color = 'green';
         setTimeout(() => {
             carregandoMsg.style.color = 'transparent';
         } ,2000);
 
     } else {
         carregandoMsg.innerText = 'loading...';
-        carregandoMsg.style.color = 'red';
+        carregandoMsg.style.color = 'green';
         setTimeout(() => {
             carregandoMsg.style.color = 'transparent';
         } ,2000);
