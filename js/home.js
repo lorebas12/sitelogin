@@ -60,7 +60,7 @@ function mostrarConteudoPerfil(){
         perfilImagem.style.filter = 'brightness(1)';
     } ,2000);
 
-    const barraSep = document.querySelector('.titulo-sep');
+    const barraSep = document.querySelector('.titulo-sepp');
     setTimeout(() => {
         barraSep.style.opacity = '100%';
     } ,3000);
