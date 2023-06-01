@@ -24,7 +24,7 @@
 
 .conteudo {
     width: 95%;
-    height: 1030px;
+    height: 1150px;
     background-color: var(--backgroundHeader);
     margin: 82px auto;
     box-shadow: 0px 0px 20px -10px #000;
@@ -158,8 +158,8 @@ hr {
 .welcome {
     background-color: var(--background);
     width: 95%;
-    height: 560px;
-    margin: 0 auto;
+    height: 630px;
+    margin: 3em auto 0 auto;
     border-radius: 14px;
     box-shadow: 0px 0px 30px -10px #000;;
     opacity: 0;
@@ -168,6 +168,27 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+#hide-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 2em 2em 0;
+    font-size: 15px;
+    padding: 0.5em 1.5em;
+    background-color: var(--backgroundHeader);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: 200ms;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#hide-button:hover {
+    background-color: rgb(50, 50, 50);
 }
 
 .welcome-perfilCont {
@@ -187,12 +208,22 @@ hr {
     border-radius: 360px;
     box-shadow: 0px 0px 60px -38px rgb(255, 62, 62);
     background-color: rgb(46, 24, 24);
+    filter: brightness(0.1);
+    transition: 2s;
+    opacity: 0;
 }
 
 .perfilCont-titulo {
     color: red;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
+    opacity: 0;
+    transition: 2s;
+}
+
+.titulo-sep {
+    opacity: 0;
+    transition: 2s;
 }
 
 /* welcome infos */
@@ -202,8 +233,10 @@ hr {
 }
 
 .infos-textos {
+    opacity: 0;
     display: flex;
     flex-direction: column;
+    transition: 2s;
 }
 
 .infos-span-red {
@@ -212,6 +245,6 @@ hr {
 
 .infos-titulo {
     color: var(--branco);
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
 }

@@ -54,4 +54,32 @@ function mostrarConteudoPerfil(){
     const perfilCont_titulo = document.querySelector('.perfilCont-titulo');
     perfilCont_titulo.innerText = usernameUser;
 
+    const perfilImagem = document.querySelector('.perfilCont-imagem');
+    setTimeout(() => {
+        perfilImagem.style.opacity = '100%';
+        perfilImagem.style.filter = 'brightness(1)';
+    } ,2000);
+
+    const barraSep = document.querySelector('.titulo-sep');
+    setTimeout(() => {
+        barraSep.style.opacity = '100%';
+    } ,3000);
+
+    const infosTextos = document.querySelector('.infos-textos');
+    setTimeout(() => {
+        infosTextos.style.opacity = '100%';
+        perfilCont_titulo.style.opacity = '100%';
+    } ,4500);
+
+    document.querySelector('#hide-button').style.display = 'block';
 }
+
+// setando botao para sumir o CONTEUDO PERFIL ACIMA
+
+const botaoHide = document.querySelector('#hide-button');
+
+botaoHide.addEventListener('click', () => {
+    const welcome = document.querySelector('.welcome');
+    welcome.style.opacity = '0';
+    botaoHide.style.display = 'none';
+});
